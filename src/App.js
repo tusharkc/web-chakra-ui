@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Text, VStack, Flex, HStack } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import Card from './components/Card/Card';
 
 function App() {
