@@ -55,7 +55,9 @@ function CardItem({ avatarSrc, name, timeAmt, timeNotation, content }) {
               {timeNotation} ago
             </Text>
           </Flex>
-          <img src="/icons/dots.png" alt="icon" />
+          <Box mx={4}>
+            <img src="/icons/dots.png" alt="icon" />
+          </Box>
         </Flex>
         <Box color={'white'} fontSize={'18px'} mb={8} mx={5}>
           {content}
@@ -80,8 +82,12 @@ function CardItem({ avatarSrc, name, timeAmt, timeNotation, content }) {
             >
               <Input
                 borderRadius={'30px'}
+                borderColor={'#00000000'}
+                bg={'#5F7495'}
+                opacity={0.2}
                 color={'white'}
                 placeholder={'Type here...'}
+                _placeholder={{ color: 'white' }}
               />
               <InputRightElement
                 children={<img src="/icons/iconSend.svg" alt="icon-send" />}
